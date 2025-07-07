@@ -24,7 +24,7 @@ const Questions = ({ next }) => {
     setSending(true);
 
     try {
-      await axios.post('http://localhost:5000/api/answers', {
+      await axios.post('https://birthday-website-bwgk.onrender.com/api/answers', {
         question: currentQuestion,
         answer: response
       });
